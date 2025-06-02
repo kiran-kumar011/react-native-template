@@ -6,13 +6,13 @@
  */
 
 import React from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
+import TodoScreen from './app/screen/todo/todo.container';
 
 function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="transparent" />
-      <Text>Schedule app</Text>
+      <TodoScreen />
     </View>
   );
 }
@@ -20,9 +20,6 @@ function App(): React.JSX.Element {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'red',
   },
 });
 
