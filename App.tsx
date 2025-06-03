@@ -6,14 +6,15 @@
  */
 
 import React from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, SafeAreaView } from 'react-native';
 import TodoScreen from './app/screen/todo/todo.container';
 
 function App(): React.JSX.Element {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <StatusBar translucent={false} backgroundColor="transparent" />
       <TodoScreen />
-    </View>
+    </SafeAreaView>
   );
 }
 
