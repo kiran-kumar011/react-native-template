@@ -6,6 +6,7 @@ PODS:
   - BranchSDK (3.12.1)
   - BVLinearGradient (2.8.3):
     - React-Core
+  - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - fast_float (6.1.4)
   - FBLazyVector (0.78.0)
@@ -29,6 +30,10 @@ PODS:
   - hermes-engine (0.78.0):
     - hermes-engine/Pre-built (= 0.78.0)
   - hermes-engine/Pre-built (0.78.0)
+  - KTVCocoaHTTPServer (1.0.0):
+    - CocoaAsyncSocket
+  - KTVHTTPCache (2.0.1):
+    - KTVCocoaHTTPServer
   - libwebp (1.5.0):
     - libwebp/demux (= 1.5.0)
     - libwebp/mux (= 1.5.0)
@@ -1633,8 +1638,32 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - react-native-video-cache (2.7.4):
+    - KTVHTTPCache (~> 2.0.0)
+    - React
   - react-native-voice (1.1.9):
     - React
+  - react-native-webview (13.14.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-NativeModulesApple (0.78.0):
     - glog
     - hermes-engine
@@ -1969,6 +1998,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeMoEngage
     - Yoga
+  - rn-scratch-card (1.2.3):
+    - React-Core
   - RNCAsyncStorage (1.12.1):
     - React-Core
   - RNCClipboard (1.5.1):
@@ -2236,6 +2267,72 @@ PODS:
     - ReactCommon/turbomodule/core
     - Sentry/HybridSDK (= 8.52.0)
     - Yoga
+  - RNSha256 (1.4.10):
+    - React-Core
+  - RNStoreReview (0.4.3):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNSVG (15.12.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNSVG/common (= 15.12.0)
+    - Yoga
+  - RNSVG/common (15.12.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
@@ -2308,7 +2405,9 @@ DEPENDENCIES:
   - react-native-otp-verify (from `../node_modules/react-native-otp-verify`)
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-video-cache (from `../node_modules/react-native-video-cache`)
   - "react-native-voice (from `../node_modules/@react-native-community/voice`)"
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-performancetimeline (from `../node_modules/react-native/ReactCommon/react/performance/timeline`)
@@ -2339,6 +2438,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeMoEngage (from `../node_modules/react-native-moengage`)
   - ReactNativeMoEngageInbox (from `../node_modules/react-native-moengage-inbox`)
+  - rn-scratch-card (from `../node_modules/rn-scratch-card`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
@@ -2352,6 +2452,9 @@ DEPENDENCIES:
   - RNScratch (from `../node_modules/react-native-scratch`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - "RNSentry (from `../node_modules/@sentry/react-native`)"
+  - RNSha256 (from `../node_modules/react-native-sha256`)
+  - RNStoreReview (from `../node_modules/react-native-store-review`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - "sparkfabrik-react-native-idfa-aaid (from `../node_modules/@sparkfabrik/react-native-idfa-aaid`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -2359,10 +2462,13 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AppsFlyerFramework
     - BranchSDK
+    - CocoaAsyncSocket
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
     - FLAnimatedImage
+    - KTVCocoaHTTPServer
+    - KTVHTTPCache
     - libwebp
     - MoEngage-iOS-SDK
     - MoEngageAnalytics
@@ -2499,8 +2605,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-pager-view"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-video-cache:
+    :path: "../node_modules/react-native-video-cache"
   react-native-voice:
     :path: "../node_modules/@react-native-community/voice"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-perflogger:
@@ -2561,6 +2671,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-moengage"
   ReactNativeMoEngageInbox:
     :path: "../node_modules/react-native-moengage-inbox"
+  rn-scratch-card:
+    :path: "../node_modules/rn-scratch-card"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
   RNCClipboard:
@@ -2587,6 +2699,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNSentry:
     :path: "../node_modules/@sentry/react-native"
+  RNSha256:
+    :path: "../node_modules/react-native-sha256"
+  RNStoreReview:
+    :path: "../node_modules/react-native-store-review"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   sparkfabrik-react-native-idfa-aaid:
     :path: "../node_modules/@sparkfabrik/react-native-idfa-aaid"
   Yoga:
@@ -2597,6 +2715,7 @@ SPEC CHECKSUMS:
   boost: 7e761d76ca2ce687f7cc98e698152abd03a18f90
   BranchSDK: 7135af6602a105fa6be3ad6c606a7f78b0131b5d
   BVLinearGradient: cb006ba232a1f3e4f341bb62c42d1098c284da70
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
   fast_float: 06eeec4fe712a76acc9376682e4808b05ce978b6
   FBLazyVector: 6fe148afcef2e3213e484758e3459609d40d57f5
@@ -2607,6 +2726,8 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: eb93e2f488219332457c3c4eafd2738ddc7e80b8
   hermes-engine: b417d2b2aee3b89b58e63e23a51e02be91dc876d
+  KTVCocoaHTTPServer: df8d7b861e603ff8037e9b2138aca2563a6b768d
+  KTVHTTPCache: 588c3eb16f6bd1e6fde1e230dabfb7bd4e490a4d
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   MerryPhotoViewer: 6d0b4f724f7451dbbdc0cecbf1324b05358de358
   MoEngage-iOS-SDK: fd3ded7dd1a8c5a50918aad0b71950d73f560515
@@ -2671,7 +2792,9 @@ SPEC CHECKSUMS:
   react-native-otp-verify: 6d153f8a8e8392c6a51f9d94c090dc16d7c756b2
   react-native-pager-view: 5ce1f4cd84c814749342a23409a7d39d0df0e2a5
   react-native-safe-area-context: 9d7528d2e8fce82d20cb0b643c8be34a4ad57464
+  react-native-video-cache: 03aa1f85f515d6db4366689bbd2e7ff068a3e434
   react-native-voice: 8d95edc2806570cd545890d549c41f54148b6e1f
+  react-native-webview: fcd66eec4aa464a8b9347881a7e34440902066f3
   React-NativeModulesApple: 88433b6946778bea9c153e27b671de15411bf225
   React-perflogger: 9e8d3c0dc0194eb932162812a168aa5dc662f418
   React-performancetimeline: 5a2d6efef52bdcefac079c7baa30934978acd023
@@ -2702,6 +2825,7 @@ SPEC CHECKSUMS:
   ReactCommon: 0c097b53f03d6bf166edbcd0915da32f3015dd90
   ReactNativeMoEngage: 5a8f4a01c8c9c92e57056c633c2c69a5dfa6d601
   ReactNativeMoEngageInbox: 1e7ef069118ab7bb46700f52e9aa1b14cb473802
+  rn-scratch-card: 4418c8352b3cfb338c029ed90e19e1555c91d5a1
   RNCAsyncStorage: 87d0d3d6193e79bd435e955f8998d2040aa60d67
   RNCClipboard: b0541df1bb88935d40bdc93b41b7d8e3334c998a
   RNCMaskedView: 4c5ee1c8667d56077246cc6d1977f77393923560
@@ -2715,6 +2839,9 @@ SPEC CHECKSUMS:
   RNScratch: 715cae1400d157abf9d065577a4dd4c6acfeeb27
   RNScreens: 8aec64fb213fd52a64445e2e470f7a9b546c5df3
   RNSentry: e3abeca6d3fb99ca1706a1490005976c6d3f8632
+  RNSha256: 4d35f112e967f58273d625a19376f4eafc72bd5c
+  RNStoreReview: f1df4978ae22ec08d9c62d59437a1d5f056d0ccf
+  RNSVG: 4aaeac3fdc7c5bc88ca801e228f62fb469be37e9
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageWebPCoder: 908b83b6adda48effe7667cd2b7f78c897e5111d
   Sentry: 6838d39e8bfc183a8bb6eb1c5e1b730c773ef1c1
